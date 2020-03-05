@@ -47,3 +47,6 @@ VOLUME /var/www/html/fileadmin
 VOLUME /var/www/html/typo3conf
 VOLUME /var/www/html/typo3temp
 VOLUME /var/www/html/uploads
+
+RUN chown -R 1001:0 /var/www/html && \
+    chmod -R g=u /var/www/html
